@@ -27,7 +27,7 @@ export class MainMenuState extends State{
 
 
         //remove the loading screen
-        document.getElementById("loading").remove();
+        document.getElementById("loading").innerHTML = "Creating Level...";
     }
 
 

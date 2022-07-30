@@ -79,6 +79,6 @@ export class LoadingState extends State{
         //its done setting up the sprites
         this.done = true;
 
-        this.game.spriteSheet.list();
+        //this.game.spriteSheet.list();
     }
 }

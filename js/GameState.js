@@ -52,8 +52,7 @@ export class GameState extends State{
         this.camera = new Vec2(0,4500);
 
 
-
-
+        console.log("Hello!");
 
     }
 
@@ -63,7 +62,11 @@ export class GameState extends State{
         this.level.init();
 
         //generate the level
-        this.level.levelGeneration()
+        this.level.levelGeneration(
+            () => {
+                document.getElementById("loading").remove();
+            }
+        )
 
 
     }

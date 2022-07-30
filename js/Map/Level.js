@@ -50,7 +50,7 @@ export class Level {
 
 
         this.dimensions = new Box(new Vec2(0,0), new Vec2(15 * 1280, 5 * 1280));
-        console.log(this.dimensions);
+        //console.log(this.dimensions);
 
     }
 
@@ -139,7 +139,7 @@ export class Level {
     /**
      * Todo: move this to its own class
      */
-    levelGeneration(){
+    levelGeneration(Callback){
         let position = new Vec2();
         let count = 0;
 
@@ -157,7 +157,10 @@ export class Level {
         }
 
 
-        console.log(count);
+        console.log("This world has " + count + " blocks");
+
+        //done creating the level
+        Callback();
     }
 
 }
